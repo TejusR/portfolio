@@ -4,12 +4,15 @@
  	{
  		font-family: karla,sans-serif;
  	}
+ 	body
+ 	{
+ 	  display: block;
+ 	}
  	div.hd
  	{
  	 padding-top: 130px;
  	 background: #e5e5eb;
      border-bottom: 1px solid #e5e7e9;
-     margin: 0 0 3.33333em;
      position: relative;
  	}
  	div.hd-bg
@@ -32,8 +35,8 @@
  	}
  	p.ph
  	{
- 	   margin-bottom: 2em;
- 	   border: 4px solid #d20068;
+ 	 margin-bottom: 2em;
+ 	 border: 4px solid #d20068;
      border-radius: 100%;
      box-shadow: 0 0 1px 11px rgba(210,0,104,.15), 0 0 1px 22px rgba(210,0,104,.1);
      display: inline-block;
@@ -49,7 +52,7 @@
  	{
  	 height: 36px;
      line-height: 36px;
-     margin: 0 3px .5em;
+     margin: 0 9px 1em;
      width: 36px;
      background: #fbf8f8;
      border-radius: 100%;
@@ -63,8 +66,47 @@
  	 background: #d20068;
  	 box-shadow: 0 0 0 8px rgba(210,0,104,.15);
  	}
+ 	.skills
+ 	{
+ 		background: #e39f1c;
+ 		position: relative;
+ 		color:#fff;
+ 		display: flex;
+ 		justify-content: space-around;
+ 		text-align: center;	
+ 	}
+ 	h2 {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+ 
+    h2.l:before,h2.l:after
+    {
+      content: '';
+      border-top: 5px solid rgba(0, 0, 0, 0.25);;
+      margin: 0 20px 0 0;
+      flex: 1 0 500px;
+    }
+
+    h2.l:after 
+    {
+      margin: 0 0 0 20px;
+    }
+    ul
+    {
+    	list-style-type: none;
+    }
+    ul li
+    {
+    	display: inline;
+    	padding-right: 150px
+    }
  </style>
  <head>
+  <link rel="icon" href="PicsArt_05-27-10.20.04.png">
   <title>Tejus</title>
  </head>
  <body>
@@ -82,5 +124,21 @@
  	   </p>
  	 </div>
  	</div>
+ 	<section class="skills">
+ 	  <div class="container">
+ 		<h2 class="l">
+ 		  Skills
+ 	    </h2>
+ 	    <ul>
+ 	    	<li><img src="https://images.all-free-download.com/images/graphiclarge/html_5_vector_logo_148263.jpg" height="70"
+ 	    		width="50"></li>
+ 	    	<li><img src="https://cdn.worldvectorlogo.com/logos/css3.svg" height="90" width="90"></li>
+ 	    	<li><img src="https://seeklogo.com/images/J/javascript-logo-E967E87D74-seeklogo.com.png" height="90" width="70"></li>
+ 	    	<li><img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" height="90" width="70"></li>
+ 	    	<li><img src="https://pbs.twimg.com/profile_images/954020529391902720/jW4dnFtA.jpg" height="70" width="70"></li>
+ 	    	<li><img src="https://image.flaticon.com/icons/png/512/38/38002.png" height="70" width="70"></li>
+ 	    </ul>
+ 	  </div>
+ 	</section>
  </body>
 </html>
